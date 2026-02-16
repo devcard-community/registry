@@ -1,0 +1,15 @@
+node_modules/
+docs/
+planning/
+*.log
+.DS_Store
+
+# Environment / secrets
+.env
+.env.*
+
+# Editor configs
+.vscode/
+.idea/
+*.swp
+*.swo

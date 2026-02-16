@@ -1,0 +1,1626 @@
+[
+  {
+    "username": "amara-cloud",
+    "name": "Amara Okonkwo",
+    "title": "Cloud Architect & Serverless Specialist",
+    "location": "",
+    "archetype": "The Cloud Weaver",
+    "bio": "Designing cloud systems that scale to zero and to millions. No servers were harmed in the making of this infrastructure.",
+    "dna": "CDK constructs, Lambda layers, Step Functions. Every repo ships with a cost calculator and a load test. The newsletter and workshops reveal a teacher who builds in public to force clarity in their own thinking.",
+    "next_project": "A serverless cost modeling tool that predicts monthly spend from CDK constructs before deployment, with what-if scenarios for traffic spikes.",
+    "about": "Cloud architect who bets on serverless for everything that isn't a database. Built event-driven architectures processing 50M events/day on Lambda. AWS Community Builder and CDK contributor. Runs workshops on serverless patterns and writes a newsletter about cloud cost optimization. Strong advocate for infrastructure as actual code, not YAML.",
+    "stack": {
+      "cloud": [
+        "AWS Lambda",
+        "DynamoDB",
+        "Step Functions",
+        "EventBridge"
+      ],
+      "languages": [
+        "TypeScript",
+        "Python",
+        "Go"
+      ],
+      "iac": [
+        "AWS CDK",
+        "SST",
+        "Pulumi"
+      ],
+      "observability": [
+        "CloudWatch",
+        "Datadog",
+        "OpenTelemetry"
+      ]
+    },
+    "interests": [
+      "Serverless Architecture Patterns",
+      "Cloud Cost Optimization",
+      "Event-Driven Design",
+      "Infrastructure as Code",
+      "Multi-Region Resilience",
+      "Developer Advocacy"
+    ],
+    "projects": [
+      {
+        "name": "costlens",
+        "description": "Pre-deployment cost predictor for AWS CDK stacks with traffic simulation",
+        "status": "wip",
+        "tags": "[aws, cdk, cost-optimization]"
+      },
+      {
+        "name": "eventweaver",
+        "description": "Visual designer for EventBridge rules with testing and replay capabilities",
+        "status": "shipped",
+        "tags": "[aws, serverless, event-driven]"
+      },
+      {
+        "name": "lambda-layers-hub",
+        "description": "Curated collection of production-ready Lambda layers with automatic updates",
+        "status": "shipped",
+        "tags": "[aws, lambda, open-source]"
+      }
+    ],
+    "experience": [],
+    "repo_count": 47,
+    "links": {
+      "github": "https://github.com/amara-cloud",
+      "twitter": "https://x.com/amaracloud",
+      "website": "https://amaraokonkwo.com"
+    },
+    "private_note": "Also maintains 20 private projects in TypeScript and Python.",
+    "claude": {
+      "style": "Architecture First",
+      "style_description": "Long planning sessions averaging 200 messages. Uses Claude to design systems before writing any code. Heavy whiteboard-style sessions.",
+      "rhythm": "Dawn Patrol",
+      "sessions": "61",
+      "total_messages": "12200",
+      "primary_model": "claude-opus-4-6",
+      "active_since": "2026-01-05",
+      "peak_hours": [
+        "5",
+        "6",
+        "7"
+      ],
+      "hour_distribution": [
+        "0",
+        "0",
+        "0",
+        "1",
+        "3",
+        "10",
+        "14",
+        "12",
+        "7",
+        "3",
+        "2",
+        "1",
+        "1",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+      ]
+    },
+    "created_at": "2026-02-05",
+    "updated_at": "2026-02-13",
+    "url": "cards/amara-cloud/"
+  },
+  {
+    "username": "devon-api",
+    "name": "Devon Park",
+    "title": "Backend Engineer & API Architect",
+    "location": "",
+    "archetype": "The API Cartographer",
+    "bio": "Designing APIs that are a joy to consume. Every endpoint tells a story, every schema is a contract.",
+    "dna": "Schema files outnumber source files in most repos. The obsession with backward compatibility and versioning reveals someone who learned from breaking changes the hard way. The bridge library is the thesis statement.",
+    "next_project": "An API changelog generator that diffs OpenAPI specs, classifies changes by severity, and auto-generates migration guides for consumers.",
+    "about": "Backend engineer focused on API design and developer experience. Built the public API platform at a devtools company serving 10K developers. Strong advocate for OpenAPI-first design and contract testing. Maintains a popular GraphQL-to-REST bridge library. Thinks about backward compatibility the way most people think about features.",
+    "stack": {
+      "backend": [
+        "Node.js",
+        "TypeScript",
+        "GraphQL",
+        "gRPC"
+      ],
+      "databases": [
+        "PostgreSQL",
+        "MongoDB",
+        "Redis"
+      ],
+      "api": [
+        "OpenAPI",
+        "Apollo Server",
+        "Fastify",
+        "Hono"
+      ],
+      "testing": [
+        "Jest",
+        "Pact",
+        "k6"
+      ]
+    },
+    "interests": [
+      "API Design Patterns",
+      "GraphQL vs REST Trade-offs",
+      "Contract Testing",
+      "Developer Experience",
+      "Schema Evolution",
+      "Rate Limiting & Caching"
+    ],
+    "projects": [
+      {
+        "name": "bridge-gql",
+        "description": "Automatic REST endpoint generation from GraphQL schemas with caching and rate limiting",
+        "status": "shipped",
+        "tags": "[graphql, rest, api-gateway]"
+      },
+      {
+        "name": "spectral-plus",
+        "description": "Extended OpenAPI linting rules for consistency, naming conventions, and pagination patterns",
+        "status": "shipped",
+        "tags": "[openapi, linting, dx]"
+      },
+      {
+        "name": "api-changelog",
+        "description": "Automated changelog and migration guide generator from OpenAPI spec diffs",
+        "status": "wip",
+        "tags": "[openapi, versioning, dx]"
+      }
+    ],
+    "experience": [],
+    "repo_count": 36,
+    "links": {
+      "github": "https://github.com/devon-api",
+      "twitter": "https://x.com/devonpark_dev"
+    },
+    "private_note": "Also maintains 13 private projects in TypeScript and Go.",
+    "claude": {
+      "style": "Schema Designer",
+      "style_description": "Focused sessions averaging 65 messages. Uses Claude to draft API schemas, review breaking changes, and generate documentation.",
+      "rhythm": "Lunch Break Hacker",
+      "sessions": "72",
+      "total_messages": "4680",
+      "primary_model": "claude-sonnet-4-5",
+      "active_since": "2026-01-11",
+      "peak_hours": [
+        "12",
+        "13",
+        "14"
+      ],
+      "hour_distribution": [
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "1",
+        "3",
+        "5",
+        "8",
+        "14",
+        "13",
+        "10",
+        "5",
+        "3",
+        "1",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+      ]
+    },
+    "created_at": "2026-02-12",
+    "updated_at": "2026-02-15",
+    "url": "cards/devon-api/"
+  },
+  {
+    "username": "elena-dev",
+    "name": "Elena Vasquez",
+    "title": "Design Systems & Frontend Architecture",
+    "location": "",
+    "archetype": "The Pixel Alchemist",
+    "bio": "Crafting component libraries that scale from startup prototypes to enterprise design systems.",
+    "dna": "The repos paint a clear picture: someone who sees the component as the fundamental unit of product development. Every library is built to be consumed, not just created. The Figma plugin work reveals the real ambition - closing the design-to-code gap entirely.",
+    "next_project": "A visual regression testing framework that compares Figma frames against rendered components at the token level - catching drift before it ships.",
+    "about": "Frontend architect obsessed with the seam between design and engineering. Builds design systems that developers actually want to use - tokens, primitives, composable patterns. Maintains a popular Figma-to-code pipeline and contributes to Radix UI. Previously led the component platform at a Series C startup.",
+    "stack": {
+      "frontend": [
+        "TypeScript",
+        "React",
+        "Next.js",
+        "Tailwind CSS",
+        "CSS Modules"
+      ],
+      "design": [
+        "Figma API",
+        "Storybook",
+        "Radix UI",
+        "Framer Motion"
+      ],
+      "testing": [
+        "Playwright",
+        "Vitest",
+        "Chromatic"
+      ],
+      "tooling": [
+        "Turborepo",
+        "Changesets",
+        "ESLint"
+      ]
+    },
+    "interests": [
+      "Design Systems & Tokens",
+      "Accessibility Engineering",
+      "Component Architecture",
+      "Visual Regression Testing",
+      "Figma Plugin Development",
+      "Micro-Frontends"
+    ],
+    "projects": [
+      {
+        "name": "tokenpilot",
+        "description": "Figma-to-code design token pipeline with automatic PR generation",
+        "status": "shipped",
+        "tags": "[figma, design-tokens, automation]"
+      },
+      {
+        "name": "primer-kit",
+        "description": "Accessible component library built on Radix primitives with full theme support",
+        "status": "shipped",
+        "tags": "[react, components, accessibility]"
+      },
+      {
+        "name": "snapdiff",
+        "description": "Visual regression tool that overlays Figma frames on rendered components",
+        "status": "wip",
+        "tags": "[testing, figma, visual-regression]"
+      }
+    ],
+    "experience": [],
+    "repo_count": 42,
+    "links": {
+      "github": "https://github.com/elena-dev",
+      "website": "https://elenavasquez.dev"
+    },
+    "private_note": "Also maintains 18 private projects in TypeScript and Figma plugins.",
+    "claude": {
+      "style": "Rapid Prototyper",
+      "style_description": "Short, focused sessions averaging 45 messages. Uses Claude to scaffold components fast, then refines by hand.",
+      "rhythm": "Morning Builder",
+      "sessions": "67",
+      "total_messages": "3015",
+      "primary_model": "claude-sonnet-4-5",
+      "active_since": "2026-01-15",
+      "peak_hours": [
+        "8",
+        "9",
+        "10"
+      ],
+      "hour_distribution": [
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "1",
+        "4",
+        "12",
+        "15",
+        "11",
+        "6",
+        "3",
+        "2",
+        "1",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+      ]
+    },
+    "created_at": "2026-02-10",
+    "updated_at": "2026-02-14",
+    "url": "cards/elena-dev/"
+  },
+  {
+    "username": "javier-web",
+    "name": "Javier Morales",
+    "title": "Full-Stack Engineer & API Designer",
+    "location": "",
+    "archetype": "The Full Stack Diplomat",
+    "bio": "Building products end-to-end - from database schema to pixel-perfect UI. Believes the best full-stack code is the code where you can't tell where the backend ends and the frontend begins.",
+    "dna": "Equal commits across frontend and backend repos. Never builds an API without a client to consume it. The Discord community hints at someone who teaches as much as they ship.",
+    "next_project": "A type-safe full-stack starter kit that generates API clients, database migrations, and UI forms from a single schema definition file.",
+    "about": "Full-stack engineer who ships complete features, not half-finished layers. Built internal tools at two YC startups, now freelancing on developer platforms. Strong opinions on REST vs GraphQL (it depends), auth patterns, and why your ORM is probably fine. Runs a small Discord for indie SaaS builders.",
+    "stack": {
+      "backend": [
+        "Go",
+        "Node.js",
+        "PostgreSQL",
+        "Redis"
+      ],
+      "frontend": [
+        "React",
+        "TypeScript",
+        "Tailwind CSS",
+        "Vite"
+      ],
+      "infra": [
+        "Docker",
+        "Fly.io",
+        "Cloudflare Workers"
+      ],
+      "tooling": [
+        "Drizzle ORM",
+        "tRPC",
+        "Turborepo"
+      ]
+    },
+    "interests": [
+      "API Design & REST/GraphQL",
+      "Type-Safe Full-Stack Patterns",
+      "Developer Experience",
+      "Indie SaaS Architecture",
+      "Edge Computing",
+      "Database Modeling"
+    ],
+    "projects": [
+      {
+        "name": "stackgen",
+        "description": "Full-stack code generator from a single YAML schema - types, API, DB, and forms",
+        "status": "wip",
+        "tags": "[codegen, full-stack, typescript]"
+      },
+      {
+        "name": "authkit-go",
+        "description": "Opinionated auth middleware for Go with JWT, OAuth2, and magic links",
+        "status": "shipped",
+        "tags": "[go, auth, middleware]"
+      },
+      {
+        "name": "saas-metrics",
+        "description": "Open-source MRR, churn, and cohort dashboard for indie SaaS founders",
+        "status": "shipped",
+        "tags": "[react, analytics, saas]"
+      }
+    ],
+    "experience": [],
+    "repo_count": 56,
+    "links": {
+      "github": "https://github.com/javier-web",
+      "website": "https://javiermorales.dev"
+    },
+    "private_note": "Also maintains 24 private projects in Go and TypeScript.",
+    "claude": {
+      "style": "Pair Programmer",
+      "style_description": "Conversational sessions averaging 120 messages. Treats Claude as a co-pilot, bouncing ideas before writing code.",
+      "rhythm": "Weekend Warrior",
+      "sessions": "44",
+      "total_messages": "5280",
+      "primary_model": "claude-sonnet-4-5",
+      "active_since": "2026-01-18",
+      "peak_hours": [
+        "10",
+        "11",
+        "14"
+      ],
+      "hour_distribution": [
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "1",
+        "3",
+        "6",
+        "9",
+        "8",
+        "4",
+        "5",
+        "7",
+        "4",
+        "2",
+        "1",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+      ]
+    },
+    "created_at": "2026-02-13",
+    "updated_at": "2026-02-15",
+    "url": "cards/javier-web/"
+  },
+  {
+    "username": "kai-data",
+    "name": "Kai Nakamura",
+    "title": "Data Engineer & Pipeline Architect",
+    "location": "",
+    "archetype": "The Data Plumber",
+    "bio": "Making data flow reliably at scale. If your pipeline breaks at 3am, you didn't build it right.",
+    "dna": "Repos full of pipeline configs, schema registries, and data quality checks. The monitoring dashboards get as much love as the pipelines themselves. The healthcare pivot explains the obsession with correctness over speed.",
+    "next_project": "A declarative data pipeline framework that generates Airflow DAGs, dbt models, and Great Expectations suites from a single lineage graph.",
+    "about": "Data engineer who thinks about failure modes first. Builds streaming pipelines, batch ETL systems, and the monitoring that ties them together. Previously at a Series D analytics company processing 2TB/day. Now at a healthcare startup where data quality is literally life or death. Contributor to Apache Beam.",
+    "stack": {
+      "languages": [
+        "Python",
+        "Scala",
+        "SQL"
+      ],
+      "data": [
+        "Apache Spark",
+        "Apache Kafka",
+        "dbt",
+        "Apache Beam"
+      ],
+      "storage": [
+        "BigQuery",
+        "Snowflake",
+        "Delta Lake",
+        "PostgreSQL"
+      ],
+      "infra": [
+        "Airflow",
+        "Kubernetes",
+        "Terraform"
+      ]
+    },
+    "interests": [
+      "Streaming Architecture",
+      "Data Quality & Observability",
+      "Schema Evolution",
+      "Pipeline Orchestration",
+      "Data Mesh Patterns",
+      "Healthcare Data Standards"
+    ],
+    "projects": [
+      {
+        "name": "pipewright",
+        "description": "Declarative pipeline builder that generates Airflow DAGs from YAML lineage specs",
+        "status": "wip",
+        "tags": "[python, airflow, data-engineering]"
+      },
+      {
+        "name": "schema-sentinel",
+        "description": "Schema evolution tracker with backward compatibility checks and migration generation",
+        "status": "shipped",
+        "tags": "[scala, schema, data-quality]"
+      },
+      {
+        "name": "streamcheck",
+        "description": "Real-time data quality monitoring for Kafka streams with anomaly detection",
+        "status": "shipped",
+        "tags": "[python, kafka, monitoring]"
+      }
+    ],
+    "experience": [],
+    "repo_count": 29,
+    "links": {
+      "github": "https://github.com/kai-data",
+      "linkedin": "https://linkedin.com/in/kainakamura"
+    },
+    "private_note": "Also maintains 11 private projects in Python and Scala.",
+    "claude": {
+      "style": "Pipeline Thinker",
+      "style_description": "Medium sessions averaging 75 messages. Uses Claude for SQL optimization, DAG design, and debugging data skew issues.",
+      "rhythm": "Afternoon Sprinter",
+      "sessions": "56",
+      "total_messages": "4200",
+      "primary_model": "claude-sonnet-4-5",
+      "active_since": "2026-01-14",
+      "peak_hours": [
+        "13",
+        "14",
+        "15"
+      ],
+      "hour_distribution": [
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "1",
+        "2",
+        "3",
+        "5",
+        "8",
+        "12",
+        "11",
+        "9",
+        "5",
+        "3",
+        "1",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+      ]
+    },
+    "created_at": "2026-02-11",
+    "updated_at": "2026-02-15",
+    "url": "cards/kai-data/"
+  },
+  {
+    "username": "leo-game",
+    "name": "Leo Ferretti",
+    "title": "Game Developer & Interactive Media Engineer",
+    "location": "",
+    "archetype": "The Pixel Mechanic",
+    "bio": "Making things move on screen and feel right in your hands. From physics sims to procedural worlds.",
+    "dna": "The repos alternate between complete games and reusable systems - physics, procedural generation, input handling. Every game ships with its engine improvements open-sourced. The Twitch streams explain the polish.",
+    "next_project": "A node-based procedural generation editor for creating game worlds with real-time preview, exportable to Unity, Godot, and Unreal.",
+    "about": "Game developer split between indie projects and tooling for other devs. Shipped two commercial titles on Steam, now building a procedural generation framework. Obsessed with game feel - the 50ms between input and response where games are won or lost. Streams dev sessions on Twitch and contributes to Godot's physics module.",
+    "stack": {
+      "engines": [
+        "Godot",
+        "Unity",
+        "Bevy"
+      ],
+      "languages": [
+        "C#",
+        "GDScript",
+        "Rust",
+        "GLSL"
+      ],
+      "graphics": [
+        "Vulkan",
+        "OpenGL",
+        "Shader Graph"
+      ],
+      "tools": [
+        "Blender",
+        "Aseprite",
+        "FMOD"
+      ]
+    },
+    "interests": [
+      "Procedural Generation",
+      "Game Feel & Juice",
+      "Physics Simulation",
+      "Shader Programming",
+      "Indie Game Dev",
+      "Interactive Storytelling"
+    ],
+    "projects": [
+      {
+        "name": "procworld",
+        "description": "Node-based procedural world generator with biome blending and real-time preview",
+        "status": "wip",
+        "tags": "[godot, procedural, tooling]"
+      },
+      {
+        "name": "impulse",
+        "description": "Physics-based platformer with momentum conservation and wall-slide mechanics",
+        "status": "shipped",
+        "tags": "[godot, game, physics]"
+      },
+      {
+        "name": "feel-engine",
+        "description": "Game feel library - screen shake, hit pause, juice effects for Godot and Unity",
+        "status": "shipped",
+        "tags": "[game-feel, open-source, effects]"
+      }
+    ],
+    "experience": [],
+    "repo_count": 33,
+    "links": {
+      "github": "https://github.com/leo-game",
+      "website": "https://leoferretti.dev"
+    },
+    "private_note": "Also maintains 8 private projects in C# and Rust.",
+    "claude": {
+      "style": "Creative Explorer",
+      "style_description": "Marathon sessions averaging 300 messages. Uses Claude for shader math, algorithm design, and brainstorming game mechanics.",
+      "rhythm": "Marathon Runner",
+      "sessions": "22",
+      "total_messages": "6600",
+      "primary_model": "claude-opus-4-6",
+      "active_since": "2026-02-01",
+      "peak_hours": [
+        "20",
+        "21",
+        "22"
+      ],
+      "hour_distribution": [
+        "2",
+        "1",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "1",
+        "2",
+        "3",
+        "3",
+        "4",
+        "4",
+        "3",
+        "4",
+        "5",
+        "7",
+        "9",
+        "11",
+        "10",
+        "6",
+        "3"
+      ]
+    },
+    "created_at": "2026-02-14",
+    "updated_at": "2026-02-16",
+    "url": "cards/leo-game/"
+  },
+  {
+    "username": "marcus-rs",
+    "name": "Marcus Chen",
+    "title": "Systems Programmer & Performance Engineer",
+    "location": "",
+    "archetype": "The Bare Metal Poet",
+    "bio": "Writing Rust where it counts - databases, compilers, and the hot paths everyone else avoids.",
+    "dna": "The commit history reads like a descent into ever-lower abstraction layers - web APIs to query planners to memory allocators. Each project shaves off another layer of indirection. The game engine background explains the performance instinct; the Rust migration explains where it landed.",
+    "next_project": "A compile-time SQL query validator that catches type mismatches and missing indexes at build time using Rust procedural macros and database schema introspection.",
+    "about": "Systems engineer who moved from C++ game engines to Rust infrastructure. Builds query engines, custom allocators, and compile-time verified state machines. Contributor to tokio and the Rust compiler. Believes that if your abstraction has runtime cost, you haven't tried hard enough.",
+    "stack": {
+      "systems": [
+        "Rust",
+        "C++",
+        "C"
+      ],
+      "data": [
+        "Apache Arrow",
+        "DuckDB",
+        "SQLite",
+        "ClickHouse"
+      ],
+      "infra": [
+        "Linux",
+        "Docker",
+        "Nix",
+        "SystemD"
+      ],
+      "tooling": [
+        "LLVM",
+        "perf",
+        "flamegraph",
+        "cargo"
+      ]
+    },
+    "interests": [
+      "Database Internals",
+      "Memory Allocators",
+      "Compiler Design",
+      "Query Optimization",
+      "Lock-Free Data Structures",
+      "Performance Engineering"
+    ],
+    "projects": [
+      {
+        "name": "quilldb",
+        "description": "Embedded columnar query engine optimized for analytical workloads on a single machine",
+        "status": "shipped",
+        "tags": "[rust, database, analytics]"
+      },
+      {
+        "name": "slab-alloc",
+        "description": "Lock-free slab allocator for high-throughput network servers",
+        "status": "shipped",
+        "tags": "[rust, memory, performance]"
+      },
+      {
+        "name": "typeql-macro",
+        "description": "Compile-time SQL type checking via Rust procedural macros",
+        "status": "wip",
+        "tags": "[rust, sql, macros]"
+      }
+    ],
+    "experience": [],
+    "repo_count": 28,
+    "links": {
+      "github": "https://github.com/marcus-rs",
+      "website": "https://marcuschen.dev"
+    },
+    "private_note": "Also maintains 12 private projects in Rust and C++.",
+    "claude": {
+      "style": "Deep Diver",
+      "style_description": "Long exploratory sessions averaging 280 messages. Uses Claude as a thinking partner for complex systems design.",
+      "rhythm": "Night Owl",
+      "sessions": "34",
+      "total_messages": "9520",
+      "primary_model": "claude-opus-4-6",
+      "active_since": "2026-01-20",
+      "peak_hours": [
+        "22",
+        "23",
+        "0"
+      ],
+      "hour_distribution": [
+        "5",
+        "3",
+        "1",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "1",
+        "2",
+        "2",
+        "3",
+        "4",
+        "5",
+        "7",
+        "9",
+        "12",
+        "10"
+      ]
+    },
+    "created_at": "2026-02-08",
+    "updated_at": "2026-02-13",
+    "url": "cards/marcus-rs/"
+  },
+  {
+    "username": "nina-sec",
+    "name": "Nina Petrov",
+    "title": "Security Engineer & Vulnerability Researcher",
+    "location": "",
+    "archetype": "The Exploit Archaeologist",
+    "bio": "Finding the bugs that matter before attackers do. Specializes in binary analysis, fuzzing, and making security tooling that developers actually use.",
+    "dna": "Every repo has a security angle - fuzzers, analyzers, audit tools. The progression from CTF writeups to production tooling shows someone turning attacker intuition into defender infrastructure.",
+    "next_project": "A supply chain security scanner that builds dependency graphs, detects typosquatting, and flags suspicious package behavior using static analysis.",
+    "about": "Security engineer with a reverse engineering background. Started in CTFs, moved to bug bounties, now builds internal security tooling at a fintech company. Maintains an open-source fuzzing framework and contributes to cargo-audit. Believes security should be a guardrail, not a gate.",
+    "stack": {
+      "languages": [
+        "Rust",
+        "Python",
+        "C",
+        "Assembly"
+      ],
+      "security": [
+        "AFL++",
+        "Ghidra",
+        "Frida",
+        "Semgrep"
+      ],
+      "infra": [
+        "Linux",
+        "Docker",
+        "GitHub Actions"
+      ],
+      "analysis": [
+        "LLVM",
+        "Binary Ninja",
+        "Wireshark"
+      ]
+    },
+    "interests": [
+      "Fuzzing & Property Testing",
+      "Supply Chain Security",
+      "Binary Analysis & Reverse Engineering",
+      "Secure Coding Patterns",
+      "Cryptography",
+      "Threat Modeling"
+    ],
+    "projects": [
+      {
+        "name": "fuzzforge",
+        "description": "Coverage-guided fuzzing framework with crash deduplication and bisection",
+        "status": "shipped",
+        "tags": "[rust, fuzzing, security]"
+      },
+      {
+        "name": "depwatch",
+        "description": "Real-time dependency vulnerability monitor with Slack and GitHub integration",
+        "status": "shipped",
+        "tags": "[python, supply-chain, monitoring]"
+      },
+      {
+        "name": "binlens",
+        "description": "Binary analysis toolkit for identifying unsafe patterns in compiled code",
+        "status": "wip",
+        "tags": "[rust, binary-analysis, security]"
+      }
+    ],
+    "experience": [],
+    "repo_count": 34,
+    "links": {
+      "github": "https://github.com/nina-sec"
+    },
+    "private_note": "Also maintains 16 private projects in Rust and Python.",
+    "claude": {
+      "style": "Methodical Investigator",
+      "style_description": "Careful, structured sessions averaging 85 messages. Uses Claude to reason through complex vulnerability chains and code audit logic.",
+      "rhythm": "Red-Eye Coder",
+      "sessions": "38",
+      "total_messages": "3230",
+      "primary_model": "claude-opus-4-6",
+      "active_since": "2026-01-06",
+      "peak_hours": [
+        "23",
+        "0",
+        "1"
+      ],
+      "hour_distribution": [
+        "8",
+        "6",
+        "3",
+        "1",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "1",
+        "2",
+        "3",
+        "3",
+        "4",
+        "5",
+        "7",
+        "10",
+        "12"
+      ]
+    },
+    "created_at": "2026-02-06",
+    "updated_at": "2026-02-14",
+    "url": "cards/nina-sec/"
+  },
+  {
+    "username": "priya-ml",
+    "name": "Priya Sharma",
+    "title": "ML Engineer & Research Scientist",
+    "location": "",
+    "archetype": "The Pattern Whisperer",
+    "bio": "Turning research papers into production models - from attention mechanisms to deployed endpoints.",
+    "dna": "The repos tell a story of someone pulling research down to earth. Every paper implementation comes with a training script, a model card, and deploy instructions. The quantization obsession reveals the real goal - making large models small enough to be useful outside the lab.",
+    "next_project": "An automated model distillation pipeline that takes a large foundation model and a task-specific dataset, then produces a deployment-ready quantized model with benchmarks and a one-click API endpoint.",
+    "about": "ML engineer who bridges the gap between research and production. Published at NeurIPS on efficient fine-tuning methods. Builds training pipelines that run on consumer GPUs and inference servers that fit in a Docker container. Obsessive about reproducibility - every experiment has a config, every model has a card.",
+    "stack": {
+      "ml": [
+        "PyTorch",
+        "JAX",
+        "Hugging Face Transformers",
+        "PEFT",
+        "DeepSpeed"
+      ],
+      "data": [
+        "Pandas",
+        "Polars",
+        "DuckDB",
+        "Apache Spark"
+      ],
+      "infra": [
+        "CUDA",
+        "Docker",
+        "Kubernetes",
+        "MLflow"
+      ],
+      "languages": [
+        "Python",
+        "C++",
+        "Rust"
+      ]
+    },
+    "interests": [
+      "Efficient Fine-Tuning (LoRA, QLoRA)",
+      "Model Quantization & Distillation",
+      "Attention Mechanisms",
+      "MLOps & Reproducibility",
+      "On-Device Inference",
+      "Synthetic Data Generation"
+    ],
+    "projects": [
+      {
+        "name": "lora-surgeon",
+        "description": "Surgical LoRA fine-tuning toolkit with automatic rank selection and layer targeting",
+        "status": "shipped",
+        "tags": "[pytorch, fine-tuning, lora]"
+      },
+      {
+        "name": "quant-bench",
+        "description": "Standardized benchmark suite for comparing quantization methods across model families",
+        "status": "shipped",
+        "tags": "[quantization, benchmarking, ml]"
+      },
+      {
+        "name": "papermill",
+        "description": "CLI that takes an arXiv paper URL and scaffolds a reproducible PyTorch implementation",
+        "status": "wip",
+        "tags": "[python, research, reproducibility]"
+      },
+      {
+        "name": "tinyllm",
+        "description": "Distillation framework for producing sub-1B parameter models from larger teachers",
+        "status": "concept",
+        "tags": "[distillation, optimization, deployment]"
+      }
+    ],
+    "experience": [],
+    "repo_count": 53,
+    "links": {
+      "github": "https://github.com/priya-ml"
+    },
+    "private_note": "Also maintains 22 private projects in Python and CUDA.",
+    "claude": {
+      "style": "Research Partner",
+      "style_description": "Medium-length sessions averaging 150 messages. Uses Claude to explore ideas, debug training runs, and review paper implementations.",
+      "rhythm": "All-Day Coder",
+      "sessions": "89",
+      "total_messages": "13350",
+      "primary_model": "claude-opus-4-6",
+      "active_since": "2026-01-08",
+      "peak_hours": [
+        "10",
+        "14",
+        "21"
+      ],
+      "hour_distribution": [
+        "1",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "1",
+        "3",
+        "8",
+        "11",
+        "7",
+        "5",
+        "6",
+        "9",
+        "7",
+        "4",
+        "3",
+        "2",
+        "4",
+        "6",
+        "8",
+        "5",
+        "2"
+      ]
+    },
+    "created_at": "2026-02-11",
+    "updated_at": "2026-02-15",
+    "url": "cards/priya-ml/"
+  },
+  {
+    "username": "rosa-embedded",
+    "name": "Rosa Lindqvist",
+    "title": "Embedded Systems Engineer & IoT Architect",
+    "location": "",
+    "archetype": "The Signal Whisperer",
+    "bio": "Writing code that runs on things with blinking LEDs. From firmware to cloud, every byte counts.",
+    "dna": "Low-level repos with meticulous documentation - register maps, timing diagrams, power budgets. The RTOS project and Zig adoption show someone pushing embedded development toward modern software practices.",
+    "next_project": "An over-the-air firmware update framework for resource-constrained MCUs with delta updates, rollback support, and cryptographic verification.",
+    "about": "Embedded engineer who bridges hardware and software. Builds firmware for industrial IoT sensors, designs custom communication protocols, and maintains a Zig-based RTOS. Previously worked on satellite communication systems where you can't just push a hotfix. Believes that embedded development deserves modern tooling and testing practices.",
+    "stack": {
+      "languages": [
+        "C",
+        "Zig",
+        "Rust",
+        "Python"
+      ],
+      "hardware": [
+        "STM32",
+        "ESP32",
+        "nRF52",
+        "RISC-V"
+      ],
+      "protocols": [
+        "MQTT",
+        "BLE",
+        "LoRa",
+        "Modbus"
+      ],
+      "tooling": [
+        "PlatformIO",
+        "Renode",
+        "Logic Analyzer",
+        "KiCad"
+      ]
+    },
+    "interests": [
+      "Real-Time Operating Systems",
+      "IoT Security & OTA Updates",
+      "Low-Power Design",
+      "Zig for Embedded",
+      "RISC-V Architecture",
+      "Edge Computing"
+    ],
+    "projects": [
+      {
+        "name": "microzig-rtos",
+        "description": "Minimal real-time operating system written in Zig for ARM Cortex-M microcontrollers",
+        "status": "shipped",
+        "tags": "[zig, rtos, embedded]"
+      },
+      {
+        "name": "ota-micro",
+        "description": "Over-the-air firmware update framework with delta compression for constrained MCUs",
+        "status": "wip",
+        "tags": "[c, firmware, iot]"
+      },
+      {
+        "name": "sensornet",
+        "description": "Industrial IoT sensor mesh with self-healing routing and edge aggregation",
+        "status": "shipped",
+        "tags": "[iot, mesh-networking, embedded]"
+      }
+    ],
+    "experience": [],
+    "repo_count": 26,
+    "links": {
+      "github": "https://github.com/rosa-embedded",
+      "website": "https://rosalindqvist.se"
+    },
+    "private_note": "Also maintains 9 private projects in C and Zig.",
+    "claude": {
+      "style": "Bit-Level Thinker",
+      "style_description": "Precise, technical sessions averaging 55 messages. Uses Claude for register configuration, protocol decoding, and timing analysis.",
+      "rhythm": "Twilight Coder",
+      "sessions": "41",
+      "total_messages": "2255",
+      "primary_model": "claude-sonnet-4-5",
+      "active_since": "2026-01-07",
+      "peak_hours": [
+        "17",
+        "18",
+        "19"
+      ],
+      "hour_distribution": [
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "1",
+        "2",
+        "3",
+        "2",
+        "1",
+        "1",
+        "1",
+        "2",
+        "5",
+        "9",
+        "14",
+        "12",
+        "8",
+        "3",
+        "1",
+        "0",
+        "0"
+      ]
+    },
+    "created_at": "2026-02-08",
+    "updated_at": "2026-02-13",
+    "url": "cards/rosa-embedded/"
+  },
+  {
+    "username": "sarah-codes",
+    "name": "Sarah Kim",
+    "title": "Mobile & Cross-Platform Developer",
+    "location": "",
+    "archetype": "The Bridge Builder",
+    "bio": "Shipping native experiences on every screen - from watchOS complications to tablet-first productivity apps.",
+    "dna": "The starred repos trace the same arc: platform boundaries are problems to solve, not accept. The sync engine isn't just infrastructure - it's the thesis that data should flow across devices without the user thinking about it. The watchOS work is the logical endpoint.",
+    "next_project": "A cross-platform background sync framework that uses CRDTs for conflict resolution and adapts its sync frequency based on battery state, network quality, and user activity patterns.",
+    "about": "Mobile developer who refuses to choose between platforms. Builds in SwiftUI and Kotlin Multiplatform, with a focus on offline-first architectures and adaptive layouts. Created a popular open-source sync engine used by 200+ apps. Cares deeply about perceived performance - if the spinner shows, the architecture is wrong.",
+    "stack": {
+      "ios": [
+        "Swift",
+        "SwiftUI",
+        "UIKit",
+        "Core Data",
+        "CloudKit"
+      ],
+      "android": [
+        "Kotlin",
+        "Jetpack Compose",
+        "Room"
+      ],
+      "cross_platform": [
+        "Kotlin Multiplatform",
+        "SQLDelight",
+        "Ktor"
+      ],
+      "backend": [
+        "Node.js",
+        "PostgreSQL",
+        "Redis"
+      ]
+    },
+    "interests": [
+      "Offline-First Architecture",
+      "CRDTs & Conflict Resolution",
+      "Cross-Platform Development",
+      "Adaptive & Responsive Layouts",
+      "watchOS & Wearables",
+      "Background Processing"
+    ],
+    "projects": [
+      {
+        "name": "syncwell",
+        "description": "Offline-first sync engine with CRDT conflict resolution for mobile apps",
+        "status": "shipped",
+        "tags": "[kotlin, swift, sync, crdt]"
+      },
+      {
+        "name": "adaptlayout",
+        "description": "Adaptive layout system for iPad and tablet-first apps with split-view support",
+        "status": "shipped",
+        "tags": "[swiftui, compose, layouts]"
+      },
+      {
+        "name": "pulsemonitor",
+        "description": "Health data dashboard for Apple Watch with complications and background refresh",
+        "status": "shipped",
+        "tags": "[watchos, healthkit, swiftui]"
+      },
+      {
+        "name": "offlinefirst-kit",
+        "description": "Template for building offline-first KMP apps with built-in sync and conflict UI",
+        "status": "wip",
+        "tags": "[kmp, offline-first, template]"
+      }
+    ],
+    "experience": [],
+    "repo_count": 38,
+    "links": {
+      "github": "https://github.com/sarah-codes",
+      "twitter": "https://x.com/sarahcodes",
+      "website": "https://sarahkim.dev"
+    },
+    "private_note": "Also maintains 14 private projects in Swift and Kotlin.",
+    "claude": {
+      "style": "Sprint Coder",
+      "style_description": "Focused bursts averaging 60 messages. Uses Claude for boilerplate generation and API exploration across platforms.",
+      "rhythm": "Split Shift",
+      "sessions": "78",
+      "total_messages": "4680",
+      "primary_model": "claude-sonnet-4-5",
+      "active_since": "2026-01-10",
+      "peak_hours": [
+        "9",
+        "10",
+        "21"
+      ],
+      "hour_distribution": [
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "1",
+        "3",
+        "7",
+        "11",
+        "9",
+        "4",
+        "2",
+        "1",
+        "0",
+        "0",
+        "0",
+        "0",
+        "1",
+        "4",
+        "7",
+        "9",
+        "5",
+        "1"
+      ]
+    },
+    "created_at": "2026-02-12",
+    "updated_at": "2026-02-15",
+    "url": "cards/sarah-codes/"
+  },
+  {
+    "username": "shayse-xr",
+    "name": "shayse",
+    "title": "Spatial Computing, Computer Vision & AI Developer",
+    "location": "",
+    "archetype": "The Dimensionalist",
+    "bio": "Building at the intersection of computer vision, neural 3D reconstruction, spatial computing, and AI-augmented workflows.",
+    "dna": "Every starred repo tells the same story from a different angle: depth maps, Gaussian splats, diffusion models, SLAM — all ways of teaching machines to see. The AI agent work isn't a pivot, it's the control plane for the vision pipeline being assembled underneath.",
+    "next_project": "A live iOS depth-estimation-to-Gaussian-splat pipeline that feeds real-time neural 3D captures into a Quest headset for collaborative spatial annotation — combining their CV research interests with their native app and XR framework experience.",
+    "about": "Developer bridging computer vision research and spatial products. Builds depth estimation pipelines, neural 3D reconstruction tools, and mixed reality experiences. Ships native macOS apps for Gaussian splatting, Quest 3 MR starter kits, and AI-powered development workflows. Works across Swift, TypeScript, Python, and C# with equal fluency.",
+    "stack": {
+      "frontend": [
+        "TypeScript",
+        "JavaScript",
+        "React",
+        "Next.js",
+        "Three.js",
+        "Tailwind CSS"
+      ],
+      "backend": [
+        "Python",
+        "Node.js"
+      ],
+      "mobile": [
+        "Swift",
+        "SwiftUI"
+      ],
+      "systems": [
+        "C",
+        "C++"
+      ],
+      "xr": [
+        "Unity",
+        "C#",
+        "Meta XR SDK",
+        "ARKit"
+      ],
+      "3d": [
+        "Three.js",
+        "React Three Fiber",
+        "Gaussian Splatting",
+        "Open3D",
+        "Blender"
+      ],
+      "ai_ml": [
+        "PyTorch",
+        "OpenCV",
+        "CoreML",
+        "Hugging Face Transformers",
+        "Stable Diffusion",
+        "ComfyUI"
+      ],
+      "computer_vision": [
+        "Depth Estimation",
+        "SLAM",
+        "3D Reconstruction",
+        "LiDAR",
+        "Neural Radiance Fields"
+      ],
+      "infra": [
+        "Docker",
+        "Shell",
+        "PostgreSQL"
+      ]
+    },
+    "interests": [
+      "3D Gaussian Splatting",
+      "Spatial Computing & XR",
+      "AI Agents & LLM Tooling",
+      "Depth Estimation & SLAM",
+      "Neural 3D Reconstruction",
+      "Generative AI & Diffusion Models",
+      "Game Engines & WebGPU"
+    ],
+    "projects": [
+      {
+        "name": "codot",
+        "description": "A desk companion that shows what Claude Code is doing",
+        "status": "wip",
+        "tags": "[python, claude-code, desk-companion]"
+      },
+      {
+        "name": "BlenderVersionManager",
+        "description": "Blenders: The simplest way to download, install, and switch between Blender 3D versions",
+        "status": "shipped",
+        "tags": "[blender, python, version-manager]",
+        "link": "https://github.com/shayse-xr/BlenderVersionManager"
+      },
+      {
+        "name": "Splat",
+        "description": "A macOS app for converting photos to 3D Gaussian Splats using Apple's Sharp model",
+        "status": "shipped",
+        "tags": "[swift, gaussian-splatting, macos]",
+        "link": "https://github.com/shayse-xr/Splat"
+      },
+      {
+        "name": "mixed-reality-starter",
+        "description": "A Unity-based Mixed Reality project utilizing the Building Blocks framework for Meta Quest 3",
+        "status": "shipped",
+        "tags": "[unity, mixed-reality, meta-quest]",
+        "link": "https://github.com/shayse-xr/mixed-reality-starter"
+      }
+    ],
+    "experience": [],
+    "repo_count": 37,
+    "links": {
+      "github": "https://github.com/shayse-xr",
+      "twitter": "https://x.com/shaysegal"
+    },
+    "private_note": "Also maintains 33 private projects primarily in TypeScript, Python, and C++.",
+    "claude": {
+      "style": "Deep Diver",
+      "rhythm": "All-day heavy builder — consistent deep flow from morning through night",
+      "sessions": "120",
+      "total_messages": "47715",
+      "avg_messages_per_session": "397",
+      "longest_session_messages": "3504",
+      "models_used": [
+        "claude-opus-4-6",
+        "claude-opus-4-5",
+        "claude-haiku-4-5",
+        "claude-sonnet-4-5"
+      ],
+      "primary_model": "claude-opus-4-6",
+      "active_since": "2026-01-03",
+      "heatmap": [
+        "[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]",
+        "[0, 0, 0, 0, 0, 0, 0, 0, 1, 3, 6, 2, 0, 3, 1, 1, 2, 0, 0, 3, 1, 2, 2, 0]",
+        "[0, 0, 0, 0, 0, 0, 0, 0, 0, 2, 4, 2, 2, 2, 1, 2, 1, 0, 0, 2, 1, 1, 2, 1]",
+        "[0, 0, 0, 0, 0, 0, 0, 0, 0, 2, 4, 1, 1, 2, 1, 2, 1, 0, 0, 2, 0, 2, 2, 0]",
+        "[0, 0, 0, 0, 0, 0, 0, 0, 0, 2, 3, 1, 1, 1, 1, 2, 2, 0, 1, 1, 1, 1, 1, 0]",
+        "[1, 0, 0, 0, 0, 0, 0, 0, 0, 2, 4, 1, 1, 2, 1, 1, 1, 0, 0, 2, 0, 1, 1, 0]",
+        "[0, 0, 0, 0, 0, 0, 0, 0, 0, 2, 3, 1, 1, 1, 1, 1, 1, 0, 0, 1, 0, 1, 1, 0]"
+      ]
+    },
+    "created_at": "2026-02-09",
+    "updated_at": "2026-02-14",
+    "url": "cards/shayse-xr/"
+  },
+  {
+    "username": "tomasz-ops",
+    "name": "Tomasz Kowalski",
+    "title": "Platform Engineer & Infrastructure Architect",
+    "location": "",
+    "archetype": "The Infrastructure Whisperer",
+    "bio": "Building the platforms that other engineers build on - from Kubernetes operators to internal developer portals.",
+    "dna": "Every repo is a layer in the same stack - GitOps controllers, Terraform modules, observability pipelines, developer portals. The pattern is clear: building the platform that makes platforms unnecessary. The operator framework isn't a project, it's a philosophy about who should own complexity.",
+    "next_project": "A self-service internal developer portal that generates Terraform, Kubernetes manifests, and CI pipelines from a single declarative app spec - reducing onboarding from days to minutes.",
+    "about": "Platform engineer who thinks in systems, not services. Designs internal developer platforms that reduce cognitive load without hiding complexity. Built a Kubernetes operator framework used by 40+ teams. Believes that good infrastructure is invisible until you need to debug it, and then it should be transparent.",
+    "stack": {
+      "infrastructure": [
+        "Kubernetes",
+        "Terraform",
+        "Pulumi",
+        "ArgoCD"
+      ],
+      "languages": [
+        "Go",
+        "Python",
+        "TypeScript",
+        "Bash"
+      ],
+      "observability": [
+        "Prometheus",
+        "Grafana",
+        "OpenTelemetry",
+        "Loki"
+      ],
+      "platforms": [
+        "AWS",
+        "GCP",
+        "Cloudflare"
+      ]
+    },
+    "interests": [
+      "Platform Engineering",
+      "Kubernetes Operators",
+      "GitOps & Continuous Delivery",
+      "Infrastructure as Code",
+      "Developer Experience",
+      "Cost Optimization"
+    ],
+    "projects": [
+      {
+        "name": "kubeforge",
+        "description": "Framework for building Kubernetes operators with built-in testing, metrics, and upgrade strategies",
+        "status": "shipped",
+        "tags": "[kubernetes, go, operators]"
+      },
+      {
+        "name": "terrastack",
+        "description": "Opinionated Terraform module library for multi-cloud infrastructure with drift detection",
+        "status": "shipped",
+        "tags": "[terraform, multi-cloud, iac]"
+      },
+      {
+        "name": "portcullis",
+        "description": "Internal developer portal with self-service provisioning and cost tracking",
+        "status": "wip",
+        "tags": "[platform-engineering, go, react]"
+      }
+    ],
+    "experience": [],
+    "repo_count": 31,
+    "links": {
+      "github": "https://github.com/tomasz-ops",
+      "linkedin": "https://linkedin.com/in/tomaszkowalski"
+    },
+    "private_note": "Also maintains 15 private projects in Go and Terraform.",
+    "claude": {
+      "style": "Architect",
+      "style_description": "Moderate sessions averaging 95 messages. Focuses on design reviews and YAML generation. Prefers Sonnet for speed.",
+      "rhythm": "Morning Builder",
+      "sessions": "52",
+      "total_messages": "4940",
+      "primary_model": "claude-sonnet-4-5",
+      "active_since": "2026-01-12",
+      "peak_hours": [
+        "7",
+        "8",
+        "9"
+      ],
+      "hour_distribution": [
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "1",
+        "3",
+        "10",
+        "14",
+        "11",
+        "5",
+        "3",
+        "2",
+        "1",
+        "1",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+      ]
+    },
+    "created_at": "2026-02-07",
+    "updated_at": "2026-02-12",
+    "url": "cards/tomasz-ops/"
+  },
+  {
+    "username": "yuki-fp",
+    "name": "Yuki Tanaka",
+    "title": "Functional Programming Advocate & Language Designer",
+    "location": "",
+    "archetype": "The Lambda Whisperer",
+    "bio": "Types are theorems, programs are proofs. Building correct software through algebraic thinking.",
+    "dna": "Libraries over applications - monads, parsers, type-level programming. The workshop repos show someone who believes FP adoption is a teaching problem, not a technical one. The Elixir pivot reveals pragmatism underneath the theory.",
+    "next_project": "A lightweight algebraic effects library for TypeScript that brings structured concurrency and composable error handling to mainstream JS developers.",
+    "about": "Functional programming enthusiast who writes production Haskell and Elixir. Maintains a popular effect system library and teaches FP workshops. Background in mathematics - moved from academia to industry to prove that FP scales beyond toy examples. Currently building distributed systems in Elixir at a fintech startup where correctness is non-negotiable.",
+    "stack": {
+      "languages": [
+        "Haskell",
+        "Elixir",
+        "OCaml",
+        "TypeScript"
+      ],
+      "frameworks": [
+        "Phoenix",
+        "Servant",
+        "Effect-TS"
+      ],
+      "data": [
+        "PostgreSQL",
+        "Mnesia",
+        "EventStore"
+      ],
+      "tooling": [
+        "Nix",
+        "Stack",
+        "Mix"
+      ]
+    },
+    "interests": [
+      "Type Theory & Category Theory",
+      "Algebraic Effects",
+      "Property-Based Testing",
+      "Language Design",
+      "Distributed Systems",
+      "FP Education"
+    ],
+    "projects": [
+      {
+        "name": "fx-ts",
+        "description": "Algebraic effects for TypeScript - composable error handling and structured concurrency",
+        "status": "wip",
+        "tags": "[typescript, effects, functional]"
+      },
+      {
+        "name": "parsewright",
+        "description": "Parser combinator library for Haskell with automatic error recovery and position tracking",
+        "status": "shipped",
+        "tags": "[haskell, parsing, library]"
+      },
+      {
+        "name": "distilled",
+        "description": "Distributed system patterns implemented in Elixir with property-based tests",
+        "status": "shipped",
+        "tags": "[elixir, distributed-systems, testing]"
+      }
+    ],
+    "experience": [],
+    "repo_count": 41,
+    "links": {
+      "github": "https://github.com/yuki-fp",
+      "website": "https://yukitanaka.dev"
+    },
+    "private_note": "Also maintains 19 private projects in Haskell and Elixir.",
+    "claude": {
+      "style": "Type Theorist",
+      "style_description": "Deep theoretical sessions averaging 180 messages. Uses Claude to explore type system design and formalize correctness proofs.",
+      "rhythm": "Night Philosopher",
+      "sessions": "47",
+      "total_messages": "8460",
+      "primary_model": "claude-opus-4-6",
+      "active_since": "2026-01-09",
+      "peak_hours": [
+        "21",
+        "22",
+        "23"
+      ],
+      "hour_distribution": [
+        "1",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "1",
+        "2",
+        "2",
+        "2",
+        "3",
+        "3",
+        "3",
+        "4",
+        "6",
+        "9",
+        "12",
+        "14",
+        "10",
+        "4"
+      ]
+    },
+    "created_at": "2026-02-09",
+    "updated_at": "2026-02-14",
+    "url": "cards/yuki-fp/"
+  }
+]

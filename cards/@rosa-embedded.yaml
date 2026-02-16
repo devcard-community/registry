@@ -1,0 +1,88 @@
+schema_version: "1"
+created_at: "2026-02-08"
+updated_at: "2026-02-13"
+
+name: Rosa Lindqvist
+title: Embedded Systems Engineer & IoT Architect
+bio: Writing code that runs on things with blinking LEDs. From firmware to cloud, every byte counts.
+
+about: >
+  Embedded engineer who bridges hardware and software. Builds firmware for
+  industrial IoT sensors, designs custom communication protocols, and maintains
+  a Zig-based RTOS. Previously worked on satellite communication systems where
+  you can't just push a hotfix. Believes that embedded development deserves
+  modern tooling and testing practices.
+
+archetype: The Signal Whisperer
+
+dna: >
+  Low-level repos with meticulous documentation - register maps, timing
+  diagrams, power budgets. The RTOS project and Zig adoption show someone
+  pushing embedded development toward modern software practices.
+
+next_project: >
+  An over-the-air firmware update framework for resource-constrained MCUs
+  with delta updates, rollback support, and cryptographic verification.
+
+stack:
+  languages:
+    - C
+    - Zig
+    - Rust
+    - Python
+  hardware:
+    - STM32
+    - ESP32
+    - nRF52
+    - RISC-V
+  protocols:
+    - MQTT
+    - BLE
+    - LoRa
+    - Modbus
+  tooling:
+    - PlatformIO
+    - Renode
+    - Logic Analyzer
+    - KiCad
+
+repo_count: 26
+
+projects:
+  - name: microzig-rtos
+    description: Minimal real-time operating system written in Zig for ARM Cortex-M microcontrollers
+    status: shipped
+    tags: [zig, rtos, embedded]
+  - name: ota-micro
+    description: Over-the-air firmware update framework with delta compression for constrained MCUs
+    status: wip
+    tags: [c, firmware, iot]
+  - name: sensornet
+    description: Industrial IoT sensor mesh with self-healing routing and edge aggregation
+    status: shipped
+    tags: [iot, mesh-networking, embedded]
+
+interests:
+  - Real-Time Operating Systems
+  - IoT Security & OTA Updates
+  - Low-Power Design
+  - Zig for Embedded
+  - RISC-V Architecture
+  - Edge Computing
+
+links:
+  github: https://github.com/rosa-embedded
+  website: https://rosalindqvist.se
+
+private_note: Also maintains 9 private projects in C and Zig.
+
+claude:
+  style: "Bit-Level Thinker"
+  style_description: "Precise, technical sessions averaging 55 messages. Uses Claude for register configuration, protocol decoding, and timing analysis."
+  rhythm: "Twilight Coder"
+  sessions: 41
+  total_messages: 2255
+  primary_model: "claude-sonnet-4-5"
+  active_since: "2026-01-07"
+  peak_hours: [17, 18, 19]
+  hour_distribution: [0, 0, 0, 0, 0, 0, 0, 1, 2, 3, 2, 1, 1, 1, 2, 5, 9, 14, 12, 8, 3, 1, 0, 0]

@@ -1,0 +1,125 @@
+schema_version: "1"
+created_at: "2026-02-09"
+updated_at: "2026-02-21"
+
+name: shayse
+title: Spatial Computing, Computer Vision & AI Developer
+bio: Building at the intersection of computer vision, neural 3D reconstruction, spatial computing, and AI-augmented workflows.
+about: >
+  Developer bridging computer vision research and spatial products. Builds depth
+  estimation pipelines, neural 3D reconstruction tools, and mixed reality experiences.
+  Ships native macOS apps for Gaussian splatting, Quest 3 MR starter kits, and
+  AI-powered development workflows. Works across Swift, TypeScript, Python, and C#
+  with equal fluency.
+
+archetype: The Dimensionalist
+
+dna: >
+  Every starred repo tells the same story from a different angle: depth maps, Gaussian
+  splats, diffusion models, SLAM — all ways of teaching machines to see. The AI agent
+  work isn't a pivot, it's the control plane for the vision pipeline being assembled
+  underneath.
+
+superpower: >
+  Sits at the rare intersection of computer vision research and product shipping —
+  reads CVPR papers and stars depth estimation repos, then builds native macOS apps
+  and Quest 3 experiences from what others leave as notebooks. Most CV engineers
+  don't ship consumer tools; most app developers don't touch neural reconstruction.
+
+trajectory: >
+  Converging computer vision, generative 3D, and spatial computing into a unified
+  pipeline. The arc from depth estimation stars to Gaussian splat apps to MR kits
+  traces a clear path toward AI-driven spatial capture products.
+
+next_project: >
+  A live iOS depth-estimation-to-Gaussian-splat pipeline that feeds real-time neural
+  3D captures into a Quest headset for collaborative spatial annotation — combining
+  their CV research interests with their native app and XR framework experience.
+
+stack:
+  languages:
+    - TypeScript
+    - Python
+    - Swift
+    - C++
+    - C#
+  frontend:
+    - React
+    - Next.js
+    - Three.js
+    - Tailwind CSS
+  spatial_vision:
+    - Unity
+    - ARKit
+    - Meta XR SDK
+    - PyTorch
+    - OpenCV
+  infrastructure:
+    - Node.js
+    - Docker
+    - PostgreSQL
+
+repo_count: 37
+
+projects:
+  - name: codot
+    description: A desk companion that shows what Claude Code is doing
+    status: wip
+    tags: [python, claude-code, desk-companion]
+  - name: devcard
+    description: Developer identity cards for Claude Code — generate, view, and share portable dev profiles
+    status: wip
+    tags: [javascript, claude-code, plugin]
+    link: https://github.com/devcard-community/devcard
+  - name: BlenderVersionManager
+    description: "Blenders: The simplest way to download, install, and switch between Blender 3D versions"
+    status: shipped
+    tags: [blender, python, version-manager]
+    link: https://github.com/shayse-xr/BlenderVersionManager
+  - name: Splat
+    description: A macOS app for converting photos to 3D Gaussian Splats using Apple's Sharp model
+    status: shipped
+    tags: [swift, gaussian-splatting, macos]
+    link: https://github.com/shayse-xr/Splat
+  - name: mixed-reality-starter
+    description: A Unity-based Mixed Reality project utilizing the Building Blocks framework for Meta Quest 3
+    status: shipped
+    tags: [unity, mixed-reality, meta-quest]
+    link: https://github.com/shayse-xr/mixed-reality-starter
+
+interests:
+  - Spatial Computing & XR
+  - AI Agents & LLM Tooling
+  - Depth Estimation & SLAM
+  - Neural 3D Reconstruction
+  - Generative AI & Diffusion Models
+  - Game Engines & WebGPU
+
+links:
+  github: https://github.com/shayse-xr
+  twitter: https://x.com/shaysegal
+
+private_note: Also maintains 33 private projects primarily in TypeScript, Python, and C++.
+
+claude:
+  style: "Deep Diver"
+  rhythm: "All-day heavy builder — consistent deep flow from morning through night"
+  sessions: 120
+  total_messages: 47715
+  avg_messages_per_session: 397
+  longest_session_messages: 3504
+  models_used:
+    - "claude-opus-4-6"
+    - "claude-opus-4-5"
+    - "claude-haiku-4-5"
+    - "claude-sonnet-4-5"
+  primary_model: "claude-opus-4-6"
+  active_since: "2026-01-03"
+  heatmap:
+    - [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+    - [0, 0, 0, 0, 0, 0, 0, 0, 1, 3, 6, 2, 0, 3, 1, 1, 2, 0, 0, 3, 1, 2, 2, 0]
+    - [0, 0, 0, 0, 0, 0, 0, 0, 0, 2, 4, 2, 2, 2, 1, 2, 1, 0, 0, 2, 1, 1, 2, 1]
+    - [0, 0, 0, 0, 0, 0, 0, 0, 0, 2, 4, 1, 1, 2, 1, 2, 1, 0, 0, 2, 0, 2, 2, 0]
+    - [0, 0, 0, 0, 0, 0, 0, 0, 0, 2, 3, 1, 1, 1, 1, 2, 2, 0, 1, 1, 1, 1, 1, 0]
+    - [1, 0, 0, 0, 0, 0, 0, 0, 0, 2, 4, 1, 1, 2, 1, 1, 1, 0, 0, 2, 0, 1, 1, 0]
+    - [0, 0, 0, 0, 0, 0, 0, 0, 0, 2, 3, 1, 1, 1, 1, 1, 1, 0, 0, 1, 0, 1, 1, 0]
