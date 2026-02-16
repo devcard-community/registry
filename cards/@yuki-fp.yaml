@@ -1,0 +1,85 @@
+schema_version: "1"
+created_at: "2026-02-09"
+updated_at: "2026-02-14"
+
+name: Yuki Tanaka
+title: Functional Programming Advocate & Language Designer
+bio: Types are theorems, programs are proofs. Building correct software through algebraic thinking.
+
+about: >
+  Functional programming enthusiast who writes production Haskell and Elixir.
+  Maintains a popular effect system library and teaches FP workshops. Background
+  in mathematics - moved from academia to industry to prove that FP scales beyond
+  toy examples. Currently building distributed systems in Elixir at a fintech
+  startup where correctness is non-negotiable.
+
+archetype: The Lambda Whisperer
+
+dna: >
+  Libraries over applications - monads, parsers, type-level programming. The
+  workshop repos show someone who believes FP adoption is a teaching problem,
+  not a technical one. The Elixir pivot reveals pragmatism underneath the theory.
+
+next_project: >
+  A lightweight algebraic effects library for TypeScript that brings structured
+  concurrency and composable error handling to mainstream JS developers.
+
+stack:
+  languages:
+    - Haskell
+    - Elixir
+    - OCaml
+    - TypeScript
+  frameworks:
+    - Phoenix
+    - Servant
+    - Effect-TS
+  data:
+    - PostgreSQL
+    - Mnesia
+    - EventStore
+  tooling:
+    - Nix
+    - Stack
+    - Mix
+
+repo_count: 41
+
+projects:
+  - name: fx-ts
+    description: Algebraic effects for TypeScript - composable error handling and structured concurrency
+    status: wip
+    tags: [typescript, effects, functional]
+  - name: parsewright
+    description: Parser combinator library for Haskell with automatic error recovery and position tracking
+    status: shipped
+    tags: [haskell, parsing, library]
+  - name: distilled
+    description: Distributed system patterns implemented in Elixir with property-based tests
+    status: shipped
+    tags: [elixir, distributed-systems, testing]
+
+interests:
+  - Type Theory & Category Theory
+  - Algebraic Effects
+  - Property-Based Testing
+  - Language Design
+  - Distributed Systems
+  - FP Education
+
+links:
+  github: https://github.com/yuki-fp
+  website: https://yukitanaka.dev
+
+private_note: Also maintains 19 private projects in Haskell and Elixir.
+
+claude:
+  style: "Type Theorist"
+  style_description: "Deep theoretical sessions averaging 180 messages. Uses Claude to explore type system design and formalize correctness proofs."
+  rhythm: "Night Philosopher"
+  sessions: 47
+  total_messages: 8460
+  primary_model: "claude-opus-4-6"
+  active_since: "2026-01-09"
+  peak_hours: [21, 22, 23]
+  hour_distribution: [1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 2, 2, 2, 3, 3, 3, 4, 6, 9, 12, 14, 10, 4]

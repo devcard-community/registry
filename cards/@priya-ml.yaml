@@ -1,0 +1,91 @@
+schema_version: "1"
+created_at: "2026-02-11"
+updated_at: "2026-02-15"
+
+name: Priya Sharma
+title: ML Engineer & Research Scientist
+bio: Turning research papers into production models - from attention mechanisms to deployed endpoints.
+about: >
+  ML engineer who bridges the gap between research and production. Published at NeurIPS
+  on efficient fine-tuning methods. Builds training pipelines that run on consumer GPUs
+  and inference servers that fit in a Docker container. Obsessive about reproducibility -
+  every experiment has a config, every model has a card.
+
+archetype: The Pattern Whisperer
+
+dna: >
+  The repos tell a story of someone pulling research down to earth. Every paper
+  implementation comes with a training script, a model card, and deploy instructions.
+  The quantization obsession reveals the real goal - making large models small enough
+  to be useful outside the lab.
+
+next_project: >
+  An automated model distillation pipeline that takes a large foundation model and
+  a task-specific dataset, then produces a deployment-ready quantized model with
+  benchmarks and a one-click API endpoint.
+
+stack:
+  ml:
+    - PyTorch
+    - JAX
+    - Hugging Face Transformers
+    - PEFT
+    - DeepSpeed
+  data:
+    - Pandas
+    - Polars
+    - DuckDB
+    - Apache Spark
+  infra:
+    - CUDA
+    - Docker
+    - Kubernetes
+    - MLflow
+  languages:
+    - Python
+    - C++
+    - Rust
+
+repo_count: 53
+
+projects:
+  - name: lora-surgeon
+    description: Surgical LoRA fine-tuning toolkit with automatic rank selection and layer targeting
+    status: shipped
+    tags: [pytorch, fine-tuning, lora]
+  - name: quant-bench
+    description: Standardized benchmark suite for comparing quantization methods across model families
+    status: shipped
+    tags: [quantization, benchmarking, ml]
+  - name: papermill
+    description: CLI that takes an arXiv paper URL and scaffolds a reproducible PyTorch implementation
+    status: wip
+    tags: [python, research, reproducibility]
+  - name: tinyllm
+    description: Distillation framework for producing sub-1B parameter models from larger teachers
+    status: concept
+    tags: [distillation, optimization, deployment]
+
+interests:
+  - Efficient Fine-Tuning (LoRA, QLoRA)
+  - Model Quantization & Distillation
+  - Attention Mechanisms
+  - MLOps & Reproducibility
+  - On-Device Inference
+  - Synthetic Data Generation
+
+links:
+  github: https://github.com/priya-ml
+
+private_note: Also maintains 22 private projects in Python and CUDA.
+
+claude:
+  style: "Research Partner"
+  style_description: "Medium-length sessions averaging 150 messages. Uses Claude to explore ideas, debug training runs, and review paper implementations."
+  rhythm: "All-Day Coder"
+  sessions: 89
+  total_messages: 13350
+  primary_model: "claude-opus-4-6"
+  active_since: "2026-01-08"
+  peak_hours: [10, 14, 21]
+  hour_distribution: [1, 0, 0, 0, 0, 0, 0, 1, 3, 8, 11, 7, 5, 6, 9, 7, 4, 3, 2, 4, 6, 8, 5, 2]
