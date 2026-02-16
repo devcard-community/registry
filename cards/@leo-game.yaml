@@ -1,0 +1,85 @@
+schema_version: "1"
+created_at: "2026-02-14"
+updated_at: "2026-02-16"
+
+name: Leo Ferretti
+title: Game Developer & Interactive Media Engineer
+bio: Making things move on screen and feel right in your hands. From physics sims to procedural worlds.
+
+about: >
+  Game developer split between indie projects and tooling for other devs.
+  Shipped two commercial titles on Steam, now building a procedural generation
+  framework. Obsessed with game feel - the 50ms between input and response
+  where games are won or lost. Streams dev sessions on Twitch and contributes
+  to Godot's physics module.
+
+archetype: The Pixel Mechanic
+
+dna: >
+  The repos alternate between complete games and reusable systems - physics,
+  procedural generation, input handling. Every game ships with its engine
+  improvements open-sourced. The Twitch streams explain the polish.
+
+next_project: >
+  A node-based procedural generation editor for creating game worlds with
+  real-time preview, exportable to Unity, Godot, and Unreal.
+
+stack:
+  engines:
+    - Godot
+    - Unity
+    - Bevy
+  languages:
+    - C#
+    - GDScript
+    - Rust
+    - GLSL
+  graphics:
+    - Vulkan
+    - OpenGL
+    - Shader Graph
+  tools:
+    - Blender
+    - Aseprite
+    - FMOD
+
+repo_count: 33
+
+projects:
+  - name: procworld
+    description: Node-based procedural world generator with biome blending and real-time preview
+    status: wip
+    tags: [godot, procedural, tooling]
+  - name: impulse
+    description: Physics-based platformer with momentum conservation and wall-slide mechanics
+    status: shipped
+    tags: [godot, game, physics]
+  - name: feel-engine
+    description: Game feel library - screen shake, hit pause, juice effects for Godot and Unity
+    status: shipped
+    tags: [game-feel, open-source, effects]
+
+interests:
+  - Procedural Generation
+  - Game Feel & Juice
+  - Physics Simulation
+  - Shader Programming
+  - Indie Game Dev
+  - Interactive Storytelling
+
+links:
+  github: https://github.com/leo-game
+  website: https://leoferretti.dev
+
+private_note: Also maintains 8 private projects in C# and Rust.
+
+claude:
+  style: "Creative Explorer"
+  style_description: "Marathon sessions averaging 300 messages. Uses Claude for shader math, algorithm design, and brainstorming game mechanics."
+  rhythm: "Marathon Runner"
+  sessions: 22
+  total_messages: 6600
+  primary_model: "claude-opus-4-6"
+  active_since: "2026-02-01"
+  peak_hours: [20, 21, 22]
+  hour_distribution: [2, 1, 0, 0, 0, 0, 0, 0, 0, 1, 2, 3, 3, 4, 4, 3, 4, 5, 7, 9, 11, 10, 6, 3]

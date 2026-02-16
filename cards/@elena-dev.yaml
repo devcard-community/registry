@@ -1,0 +1,85 @@
+schema_version: "1"
+created_at: "2026-02-10"
+updated_at: "2026-02-14"
+
+name: Elena Vasquez
+title: Design Systems & Frontend Architecture
+bio: Crafting component libraries that scale from startup prototypes to enterprise design systems.
+about: >
+  Frontend architect obsessed with the seam between design and engineering. Builds
+  design systems that developers actually want to use - tokens, primitives, composable
+  patterns. Maintains a popular Figma-to-code pipeline and contributes to Radix UI.
+  Previously led the component platform at a Series C startup.
+
+archetype: The Pixel Alchemist
+
+dna: >
+  The repos paint a clear picture: someone who sees the component as the fundamental
+  unit of product development. Every library is built to be consumed, not just created.
+  The Figma plugin work reveals the real ambition - closing the design-to-code gap entirely.
+
+next_project: >
+  A visual regression testing framework that compares Figma frames against rendered
+  components at the token level - catching drift before it ships.
+
+stack:
+  frontend:
+    - TypeScript
+    - React
+    - Next.js
+    - Tailwind CSS
+    - CSS Modules
+  design:
+    - Figma API
+    - Storybook
+    - Radix UI
+    - Framer Motion
+  testing:
+    - Playwright
+    - Vitest
+    - Chromatic
+  tooling:
+    - Turborepo
+    - Changesets
+    - ESLint
+
+repo_count: 42
+
+projects:
+  - name: tokenpilot
+    description: Figma-to-code design token pipeline with automatic PR generation
+    status: shipped
+    tags: [figma, design-tokens, automation]
+  - name: primer-kit
+    description: Accessible component library built on Radix primitives with full theme support
+    status: shipped
+    tags: [react, components, accessibility]
+  - name: snapdiff
+    description: Visual regression tool that overlays Figma frames on rendered components
+    status: wip
+    tags: [testing, figma, visual-regression]
+
+interests:
+  - Design Systems & Tokens
+  - Accessibility Engineering
+  - Component Architecture
+  - Visual Regression Testing
+  - Figma Plugin Development
+  - Micro-Frontends
+
+links:
+  github: https://github.com/elena-dev
+  website: https://elenavasquez.dev
+
+private_note: Also maintains 18 private projects in TypeScript and Figma plugins.
+
+claude:
+  style: "Rapid Prototyper"
+  style_description: "Short, focused sessions averaging 45 messages. Uses Claude to scaffold components fast, then refines by hand."
+  rhythm: "Morning Builder"
+  sessions: 67
+  total_messages: 3015
+  primary_model: "claude-sonnet-4-5"
+  active_since: "2026-01-15"
+  peak_hours: [8, 9, 10]
+  hour_distribution: [0, 0, 0, 0, 0, 0, 1, 4, 12, 15, 11, 6, 3, 2, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0]

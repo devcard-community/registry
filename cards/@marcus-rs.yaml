@@ -1,0 +1,86 @@
+schema_version: "1"
+created_at: "2026-02-08"
+updated_at: "2026-02-13"
+
+name: Marcus Chen
+title: Systems Programmer & Performance Engineer
+bio: Writing Rust where it counts - databases, compilers, and the hot paths everyone else avoids.
+about: >
+  Systems engineer who moved from C++ game engines to Rust infrastructure. Builds
+  query engines, custom allocators, and compile-time verified state machines. Contributor
+  to tokio and the Rust compiler. Believes that if your abstraction has runtime cost,
+  you haven't tried hard enough.
+
+archetype: The Bare Metal Poet
+
+dna: >
+  The commit history reads like a descent into ever-lower abstraction layers - web
+  APIs to query planners to memory allocators. Each project shaves off another layer
+  of indirection. The game engine background explains the performance instinct; the
+  Rust migration explains where it landed.
+
+next_project: >
+  A compile-time SQL query validator that catches type mismatches and missing indexes
+  at build time using Rust procedural macros and database schema introspection.
+
+stack:
+  systems:
+    - Rust
+    - C++
+    - C
+  data:
+    - Apache Arrow
+    - DuckDB
+    - SQLite
+    - ClickHouse
+  infra:
+    - Linux
+    - Docker
+    - Nix
+    - SystemD
+  tooling:
+    - LLVM
+    - perf
+    - flamegraph
+    - cargo
+
+repo_count: 28
+
+projects:
+  - name: quilldb
+    description: Embedded columnar query engine optimized for analytical workloads on a single machine
+    status: shipped
+    tags: [rust, database, analytics]
+  - name: slab-alloc
+    description: Lock-free slab allocator for high-throughput network servers
+    status: shipped
+    tags: [rust, memory, performance]
+  - name: typeql-macro
+    description: Compile-time SQL type checking via Rust procedural macros
+    status: wip
+    tags: [rust, sql, macros]
+
+interests:
+  - Database Internals
+  - Memory Allocators
+  - Compiler Design
+  - Query Optimization
+  - Lock-Free Data Structures
+  - Performance Engineering
+
+links:
+  github: https://github.com/marcus-rs
+  website: https://marcuschen.dev
+
+private_note: Also maintains 12 private projects in Rust and C++.
+
+claude:
+  style: "Deep Diver"
+  style_description: "Long exploratory sessions averaging 280 messages. Uses Claude as a thinking partner for complex systems design."
+  rhythm: "Night Owl"
+  sessions: 34
+  total_messages: 9520
+  primary_model: "claude-opus-4-6"
+  active_since: "2026-01-20"
+  peak_hours: [22, 23, 0]
+  hour_distribution: [5, 3, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 2, 2, 3, 4, 5, 7, 9, 12, 10]

@@ -1,0 +1,221 @@
+name: Validate Devcard PR
+
+on:
+  pull_request_target:
+    branches: [main]
+    paths:
+      - 'cards/**'
+
+permissions:
+  contents: write
+  pull-requests: write
+  actions: write
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    env:
+      PR_NUMBER: ${{ github.event.pull_request.number }}
+    steps:
+      - name: Checkout PR merge commit
+        uses: actions/checkout@v4
+        with:
+          ref: refs/pull/${{ github.event.pull_request.number }}/merge
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Analyze PR changes
+        id: analyze
+        run: |
+          PR_AUTHOR=$(gh pr view "$PR_NUMBER" --json author --jq '.author.login')
+          echo "author=$PR_AUTHOR" >> "$GITHUB_OUTPUT"
+
+          # Categorize changed files by status
+          gh api repos/${{ github.repository }}/pulls/$PR_NUMBER/files --jq '.[] | "\(.status)\t\(.filename)"' > /tmp/pr-files.txt
+
+          ADDED=$(grep -P '^added\t' /tmp/pr-files.txt | cut -f2 || true)
+          MODIFIED=$(grep -P '^modified\t' /tmp/pr-files.txt | cut -f2 || true)
+          REMOVED=$(grep -P '^removed\t' /tmp/pr-files.txt | cut -f2 || true)
+
+          # Check if all changes are within cards/
+          NON_CARD=$(cat /tmp/pr-files.txt | cut -f2 | grep -v '^cards/' || true)
+          if [ -n "$NON_CARD" ]; then
+            echo "has_non_card=true" >> "$GITHUB_OUTPUT"
+            echo "::warning::PR modifies files outside cards/"
+            echo "$NON_CARD"
+          else
+            echo "has_non_card=false" >> "$GITHUB_OUTPUT"
+          fi
+
+          # Detect card additions/modifications
+          CARD_CHANGES=$(echo -e "${ADDED}\n${MODIFIED}" | grep '^cards/.*\.ya\?ml$' || true)
+          if [ -n "$CARD_CHANGES" ]; then
+            echo "$CARD_CHANGES" > /tmp/changed-cards.txt
+            echo "has_changes=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "has_changes=false" >> "$GITHUB_OUTPUT"
+          fi
+
+          # Detect card deletions
+          CARD_DELETIONS=$(echo "$REMOVED" | grep '^cards/.*\.ya\?ml$' || true)
+          if [ -n "$CARD_DELETIONS" ]; then
+            echo "$CARD_DELETIONS" > /tmp/deleted-cards.txt
+            echo "has_deletions=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "has_deletions=false" >> "$GITHUB_OUTPUT"
+          fi
+
+          # Determine PR type
+          if [ -n "$CARD_DELETIONS" ] && [ -z "$CARD_CHANGES" ]; then
+            echo "pr_type=deletion" >> "$GITHUB_OUTPUT"
+          elif [ -n "$CARD_CHANGES" ] && [ -z "$CARD_DELETIONS" ]; then
+            echo "pr_type=submission" >> "$GITHUB_OUTPUT"
+          else
+            echo "pr_type=mixed" >> "$GITHUB_OUTPUT"
+          fi
+        env:
+          GH_TOKEN: ${{ github.token }}
+
+      - name: Flag for manual review (non-card files)
+        if: steps.analyze.outputs.has_non_card == 'true'
+        run: |
+          echo "::warning::PR modifies files outside cards/ - skipping auto-merge, requires manual review."
+          gh pr comment "$PR_NUMBER" --body "This PR modifies files outside \`cards/\` and requires manual review before merging."
+        env:
+          GH_TOKEN: ${{ github.token }}
+
+      - name: Verify submission ownership
+        if: steps.analyze.outputs.has_changes == 'true' && steps.analyze.outputs.has_non_card == 'false'
+        id: submit_ownership
+        run: |
+          PR_AUTHOR="${{ steps.analyze.outputs.author }}"
+          VALID=true
+
+          while IFS= read -r file; do
+            [ -z "$file" ] && continue
+            CARD_USER=$(basename "$file" | sed 's/^@//; s/\.ya\?ml$//')
+            if [ "$CARD_USER" != "$PR_AUTHOR" ]; then
+              echo "::error::User $PR_AUTHOR cannot submit $file (only @$CARD_USER can)"
+              VALID=false
+            fi
+          done < /tmp/changed-cards.txt
+
+          echo "valid=$VALID" >> "$GITHUB_OUTPUT"
+
+      - name: Reject unauthorized submission
+        if: steps.submit_ownership.outputs.valid == 'false'
+        run: |
+          gh pr comment "$PR_NUMBER" --body "Submission rejected: you can only publish your own card. The filename must match your GitHub username (\`@your-username.yaml\`)."
+          exit 1
+        env:
+          GH_TOKEN: ${{ github.token }}
+
+      - name: Validate card schema
+        if: steps.analyze.outputs.has_changes == 'true' && steps.submit_ownership.outputs.valid == 'true' && steps.analyze.outputs.has_non_card == 'false'
+        id: validate
+        run: |
+          ALL_VALID=true
+          > /tmp/validation-errors.md
+
+          while IFS= read -r file; do
+            [ -z "$file" ] && continue
+            echo "Validating: $file"
+
+            if OUTPUT=$(node site/validate.mjs "$file" 2>&1); then
+              echo "VALID: $file"
+            else
+              ALL_VALID=false
+              {
+                echo "### \`${file}\`"
+                echo ""
+                echo '```json'
+                echo "$OUTPUT"
+                echo '```'
+                echo ""
+              } >> /tmp/validation-errors.md
+              echo "INVALID: $file"
+            fi
+          done < /tmp/changed-cards.txt
+
+          echo "all_valid=$ALL_VALID" >> "$GITHUB_OUTPUT"
+
+      - name: Verify deletion ownership
+        if: steps.analyze.outputs.pr_type == 'deletion' && steps.analyze.outputs.has_non_card == 'false'
+        id: ownership
+        run: |
+          PR_AUTHOR="${{ steps.analyze.outputs.author }}"
+          VALID=true
+
+          while IFS= read -r file; do
+            [ -z "$file" ] && continue
+            # Extract username from cards/@username.yaml
+            CARD_USER=$(basename "$file" | sed 's/^@//; s/\.ya\?ml$//')
+            if [ "$CARD_USER" != "$PR_AUTHOR" ]; then
+              echo "::error::User $PR_AUTHOR cannot delete $file (belongs to $CARD_USER)"
+              VALID=false
+            fi
+          done < /tmp/deleted-cards.txt
+
+          echo "valid=$VALID" >> "$GITHUB_OUTPUT"
+
+      - name: Auto-merge valid card submission
+        if: steps.analyze.outputs.pr_type == 'submission' && steps.submit_ownership.outputs.valid == 'true' && steps.validate.outputs.all_valid == 'true' && steps.analyze.outputs.has_non_card == 'false'
+        id: merge_submission
+        run: |
+          gh pr merge --squash "$PR_NUMBER"
+        env:
+          GH_TOKEN: ${{ github.token }}
+
+      - name: Auto-merge valid card deletion
+        if: steps.analyze.outputs.pr_type == 'deletion' && steps.ownership.outputs.valid == 'true' && steps.analyze.outputs.has_non_card == 'false'
+        id: merge_deletion
+        run: |
+          gh pr merge --squash "$PR_NUMBER"
+        env:
+          GH_TOKEN: ${{ github.token }}
+
+      - name: Trigger site rebuild
+        if: steps.merge_submission.outcome == 'success' || steps.merge_deletion.outcome == 'success'
+        run: |
+          gh workflow run build-pages.yml
+        env:
+          GH_TOKEN: ${{ github.token }}
+
+      - name: Reject unauthorized deletion
+        if: steps.analyze.outputs.pr_type == 'deletion' && steps.ownership.outputs.valid == 'false'
+        run: |
+          gh pr comment "$PR_NUMBER" --body "Deletion rejected: you can only remove your own card."
+          exit 1
+        env:
+          GH_TOKEN: ${{ github.token }}
+
+      - name: Flag mixed PR for manual review
+        if: steps.analyze.outputs.pr_type == 'mixed' && steps.analyze.outputs.has_non_card == 'false'
+        run: |
+          echo "::warning::PR contains both additions and deletions - requires manual review."
+          gh pr comment "$PR_NUMBER" --body "This PR contains both card additions and deletions. Manual review required."
+        env:
+          GH_TOKEN: ${{ github.token }}
+
+      - name: Comment validation errors
+        if: steps.validate.outputs.all_valid == 'false'
+        run: |
+          {
+            echo "## Devcard Validation Failed"
+            echo ""
+            echo "The following card(s) have validation errors that must be fixed before merging:"
+            echo ""
+            cat /tmp/validation-errors.md
+            echo "Please fix the errors above and push again."
+          } > /tmp/pr-comment.md
+
+          gh pr comment "$PR_NUMBER" --body-file /tmp/pr-comment.md
+        env:
+          GH_TOKEN: ${{ github.token }}
+
+      - name: Fail on invalid
+        if: steps.validate.outputs.all_valid == 'false'
+        run: exit 1

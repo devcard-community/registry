@@ -1,0 +1,85 @@
+schema_version: "1"
+created_at: "2026-02-11"
+updated_at: "2026-02-15"
+
+name: Kai Nakamura
+title: Data Engineer & Pipeline Architect
+bio: Making data flow reliably at scale. If your pipeline breaks at 3am, you didn't build it right.
+
+about: >
+  Data engineer who thinks about failure modes first. Builds streaming pipelines,
+  batch ETL systems, and the monitoring that ties them together. Previously at
+  a Series D analytics company processing 2TB/day. Now at a healthcare startup
+  where data quality is literally life or death. Contributor to Apache Beam.
+
+archetype: The Data Plumber
+
+dna: >
+  Repos full of pipeline configs, schema registries, and data quality checks.
+  The monitoring dashboards get as much love as the pipelines themselves. The
+  healthcare pivot explains the obsession with correctness over speed.
+
+next_project: >
+  A declarative data pipeline framework that generates Airflow DAGs, dbt
+  models, and Great Expectations suites from a single lineage graph.
+
+stack:
+  languages:
+    - Python
+    - Scala
+    - SQL
+  data:
+    - Apache Spark
+    - Apache Kafka
+    - dbt
+    - Apache Beam
+  storage:
+    - BigQuery
+    - Snowflake
+    - Delta Lake
+    - PostgreSQL
+  infra:
+    - Airflow
+    - Kubernetes
+    - Terraform
+
+repo_count: 29
+
+projects:
+  - name: pipewright
+    description: Declarative pipeline builder that generates Airflow DAGs from YAML lineage specs
+    status: wip
+    tags: [python, airflow, data-engineering]
+  - name: schema-sentinel
+    description: Schema evolution tracker with backward compatibility checks and migration generation
+    status: shipped
+    tags: [scala, schema, data-quality]
+  - name: streamcheck
+    description: Real-time data quality monitoring for Kafka streams with anomaly detection
+    status: shipped
+    tags: [python, kafka, monitoring]
+
+interests:
+  - Streaming Architecture
+  - Data Quality & Observability
+  - Schema Evolution
+  - Pipeline Orchestration
+  - Data Mesh Patterns
+  - Healthcare Data Standards
+
+links:
+  github: https://github.com/kai-data
+  linkedin: https://linkedin.com/in/kainakamura
+
+private_note: Also maintains 11 private projects in Python and Scala.
+
+claude:
+  style: "Pipeline Thinker"
+  style_description: "Medium sessions averaging 75 messages. Uses Claude for SQL optimization, DAG design, and debugging data skew issues."
+  rhythm: "Afternoon Sprinter"
+  sessions: 56
+  total_messages: 4200
+  primary_model: "claude-sonnet-4-5"
+  active_since: "2026-01-14"
+  peak_hours: [13, 14, 15]
+  hour_distribution: [0, 0, 0, 0, 0, 0, 0, 0, 1, 2, 3, 5, 8, 12, 11, 9, 5, 3, 1, 0, 0, 0, 0, 0]

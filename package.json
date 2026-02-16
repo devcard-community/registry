@@ -1,0 +1,24 @@
+{
+  "name": "devcard-registry",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Devcard community registry — public card pages, gallery, and social sharing",
+  "scripts": {
+    "dev": "vite",
+    "build:cards": "node site/build.mjs --full && cp docs/cards-index.json public/cards-index.json",
+    "build:gallery": "rm -rf docs/assets && vite build",
+    "build": "node site/build.mjs --full && cp docs/cards-index.json public/cards-index.json && rm -rf docs/assets && vite build",
+    "validate": "node site/validate.mjs"
+  },
+  "dependencies": {
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "react-router-dom": "^7.13.0"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "^4.3.0",
+    "puppeteer": "^24.2.0",
+    "vite": "^6.1.0"
+  }
+}
