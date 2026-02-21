@@ -1,6 +1,6 @@
 schema_version: "1"
 created_at: "2026-02-09"
-updated_at: "2026-02-16"
+updated_at: "2026-02-21"
 
 name: shayse
 title: Spatial Computing, Computer Vision & AI Developer
@@ -37,35 +37,24 @@ next_project: >
   their CV research interests with their native app and XR framework experience.
 
 stack:
-  frontend:
+  languages:
     - TypeScript
+    - Python
+    - Swift
+    - C++
+    - C#
+  frontend:
     - React
     - Next.js
     - Three.js
     - Tailwind CSS
-  native:
-    - Swift
-    - SwiftUI
-    - C
-    - C++
+  spatial_vision:
     - Unity
-    - C#
-  spatial_3d:
-    - Gaussian Splatting
-    - React Three Fiber
-    - Open3D
     - ARKit
     - Meta XR SDK
-    - Blender
-  ai_vision:
     - PyTorch
     - OpenCV
-    - CoreML
-    - Depth Estimation
-    - SLAM
-    - Neural Radiance Fields
-  backend:
-    - Python
+  infrastructure:
     - Node.js
     - Docker
     - PostgreSQL
@@ -77,6 +66,11 @@ projects:
     description: A desk companion that shows what Claude Code is doing
     status: wip
     tags: [python, claude-code, desk-companion]
+  - name: devcard
+    description: Developer identity cards for Claude Code — generate, view, and share portable dev profiles
+    status: wip
+    tags: [javascript, claude-code, plugin]
+    link: https://github.com/devcard-community/devcard
   - name: BlenderVersionManager
     description: "Blenders: The simplest way to download, install, and switch between Blender 3D versions"
     status: shipped
@@ -94,7 +88,6 @@ projects:
     link: https://github.com/shayse-xr/mixed-reality-starter
 
 interests:
-  - 3D Gaussian Splatting
   - Spatial Computing & XR
   - AI Agents & LLM Tooling
   - Depth Estimation & SLAM
